@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -49,13 +49,13 @@
 		B2E52101255A7FA000267999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2E52103255A7FA200267999 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2E52106255A7FA200267999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B2E52108255A7FA200267999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2E5210D255A7FA300267999 /* ProjSOLIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjSOLIDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E52111255A7FA300267999 /* ProjSOLIDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjSOLIDTests.swift; sourceTree = "<group>"; };
 		B2E52113255A7FA300267999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2E52118255A7FA300267999 /* ProjSOLIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjSOLIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E5211C255A7FA300267999 /* ProjSOLIDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjSOLIDUITests.swift; sourceTree = "<group>"; };
 		B2E5211E255A7FA300267999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E52161255A85BE00267999 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD17CC9FAA63C2D96C58814A /* Pods-ProjSOLID-ProjSOLIDUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjSOLID-ProjSOLIDUITests.debug.xcconfig"; path = "Target Support Files/Pods-ProjSOLID-ProjSOLIDUITests/Pods-ProjSOLID-ProjSOLIDUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3A26B227A88B7E75A98B0D8 /* Pods_ProjSOLID_ProjSOLIDUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjSOLID_ProjSOLIDUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B16D5C9377CC3F1539D902 /* Pods-ProjSOLID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjSOLID.debug.xcconfig"; path = "Target Support Files/Pods-ProjSOLID/Pods-ProjSOLID.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +111,6 @@
 				18F09E37A564D75FBAA8AFAB /* Pods-ProjSOLIDTests.debug.xcconfig */,
 				E5435006A350963D3C855656 /* Pods-ProjSOLIDTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,13 +139,9 @@
 		B2E520F9255A7FA000267999 /* ProjSOLID */ = {
 			isa = PBXGroup;
 			children = (
-				B2E520FA255A7FA000267999 /* AppDelegate.swift */,
-				B2E520FC255A7FA000267999 /* SceneDelegate.swift */,
-				B2E520FE255A7FA000267999 /* ViewController.swift */,
-				B2E52100255A7FA000267999 /* Main.storyboard */,
-				B2E52103255A7FA200267999 /* Assets.xcassets */,
-				B2E52105255A7FA200267999 /* LaunchScreen.storyboard */,
-				B2E52108255A7FA200267999 /* Info.plist */,
+				B2E5214A255A839F00267999 /* App */,
+				B2E52149255A839400267999 /* Services */,
+				B2E52148255A838C00267999 /* Modules */,
 			);
 			path = ProjSOLID;
 			sourceTree = "<group>";
@@ -167,6 +162,34 @@
 				B2E5211E255A7FA300267999 /* Info.plist */,
 			);
 			path = ProjSOLIDUITests;
+			sourceTree = "<group>";
+		};
+		B2E52148255A838C00267999 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B2E520FE255A7FA000267999 /* ViewController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B2E52149255A839400267999 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B2E5214A255A839F00267999 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B2E52161255A85BE00267999 /* Info.plist */,
+				B2E520FA255A7FA000267999 /* AppDelegate.swift */,
+				B2E52100255A7FA000267999 /* Main.storyboard */,
+				B2E520FC255A7FA000267999 /* SceneDelegate.swift */,
+				B2E52103255A7FA200267999 /* Assets.xcassets */,
+				B2E52105255A7FA200267999 /* LaunchScreen.storyboard */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -588,7 +611,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 685ZQ84J9B;
-				INFOPLIST_FILE = ProjSOLID/Info.plist;
+				INFOPLIST_FILE = ProjSOLID/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -608,7 +631,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 685ZQ84J9B;
-				INFOPLIST_FILE = ProjSOLID/Info.plist;
+				INFOPLIST_FILE = ProjSOLID/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
