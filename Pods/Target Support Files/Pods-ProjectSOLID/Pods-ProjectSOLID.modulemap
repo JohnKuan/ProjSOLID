@@ -1,6 +1,0 @@
-framework module Pods_ProjectSOLID {
-  umbrella header "Pods-ProjectSOLID-umbrella.h"
-
-  export *
-  module * { export * }
-}

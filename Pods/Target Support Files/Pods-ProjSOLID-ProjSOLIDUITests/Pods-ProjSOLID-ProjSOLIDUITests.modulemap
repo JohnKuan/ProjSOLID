@@ -1,0 +1,6 @@
+framework module Pods_ProjSOLID_ProjSOLIDUITests {
+  umbrella header "Pods-ProjSOLID-ProjSOLIDUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
